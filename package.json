@@ -1,0 +1,44 @@
+{
+  "name": "json-graph-visualizer",
+  "displayName": "JSON Graph Visualizer",
+  "description": "JSON Graph Visualizer - part of jsonGraph Visual JSON data flow inspector - paste JSON or fetch from API endpoints and visualize as interactive node graphs.",
+  "version": "0.0.1",
+  "publisher": "RatneshDesign",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "json",
+    "json viewer",
+    "json visualizer",
+    "json graph",
+    "tree view",
+    "node graph",
+    "api",
+    "data visualization"
+  ],
+  "activationEvents": [
+    "onCommand:jsonVisualizer.open"
+  ],
+  "main": "./src/extension.js",
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RatneshDesign/Json-Graph-Visualizer"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsonVisualizer.open",
+        "title": "JSON Graph Visualizer: Open"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "echo No build step needed"
+  }
+}
